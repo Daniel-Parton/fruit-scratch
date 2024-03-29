@@ -1,0 +1,36 @@
+{
+    "compilerOptions": {
+      "target": "ESNext",
+      "module": "ESNext",
+      "lib": ["ESNext", "DOM", "scripthost"],
+      "moduleResolution": "Node",
+      "strict": false,
+      "sourceMap": true,
+      "resolveJsonModule": true,
+      "esModuleInterop": true,
+      "types": ["vite/client", "jest"],
+      "noEmit": true,
+      "noUnusedLocals": true,
+      "noUnusedParameters": true,
+      "noImplicitReturns": true,
+      "baseUrl": "./src",
+      "paths": {
+        "@/entities": [
+            "entities"
+        ],
+        "@/entities/*": [
+            "entities/*"
+        ],
+        "@/utils": [
+            "utils"
+        ],
+        "@/utils/*": [
+            "utils/*"
+        ],
+        "@/config": [
+            "config"
+        ]
+      }
+    },
+    "include": ["./src"]
+  }
